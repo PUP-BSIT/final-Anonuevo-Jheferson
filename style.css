@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 9vh;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  color: #FCA311;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  position: relative;
+  width: 770px;
+  height: 50px;
+}
+
+nav a {
+  display: inline-block;
+  position: relative;
+  margin: 0 5px;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 100%;
+  background: linear-gradient(45deg, #FCA311, #FCA311);
+  border-radius: 8px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 4px;
+  width: 0;
+  background: white;
+  transition: width 0.5s, left 0.5s;
+  border-radius: 4px;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+  width: 100%;
+}
+
+nav a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+main {
+  padding: 20px;
+}
