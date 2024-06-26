@@ -17,62 +17,56 @@
         <h1>jhefersonAñonuevo(<span class="auto-type"></span>);</h1>
       </div>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#my_goals">My Goals</a>
-        <a href="#my_works">My Works</a>
-        <a href="#5_years">5 Years From Now</a>
-        <div id="marker"></div>
+        <div class="nav-content">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#my_goals">My Goals</a></li>
+            <li><a href="#five_years">5 years from now</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
-  <main>
-    <div id="home" class="intro">
-      <div>
-        <h1>
-          Hi, I'm Jhef and Welcome to my Website!
-        </h1>
-        <p>
-          I am a student of PUP-Taguig and I am studying Web Development.
-          I am a person who is very interested in technology that is why
-          I have chosen this course. I am a person who is very eager to
-          learn things about technology.
-        </p>
-      </div>
-      <div>
-        <img src="./images/jhef.jpg" alt="picture of jhef">
-      </div>
-    </div>
+    <section id="home" class="section">
+          <div class="section-container">
+            <div class="content">
+              <h1 class="title">
+                Hello! <span> I'm Jhef <br /></span> And this is my Website!
+              </h1>
+              <p class="description">
+                I am a student of PUP-Taguig and I am studying Web Development.
+                I am a person who is very interested in technology that is why
+                I have chosen this course. I am a person who is very eager to
+                learn things about technology.
+              </p>
+            </div>
+            <div class="images">
+              <img src="./images/jhef.jpg" alt="Maui Roche" />
+            </div>
+  </section>
+
     <div id="my_goals" class="my-goals">
-      <h1>
-        My Goals
-      </h1>
-      <ul>
-        <li>Graduate</li>
-        <li>Build Good Career</li>
-        <li>Be Successful</li>
-        <li>Join a Good Company</li>
-      </ul>
-    </div>
-    <div id="my_works" class="my-works">
-      <h1>My Works</h1>
-      <div>
-        <ol>
-          <li>
-            <a href="./my_works/country.html">
-              Countries of the World
-            </a>
-          </li>
-          <li>
-            <a href="./my_works/cars.html">
-              CRUD: Cars
-            </a>
-          </li>
-        </ol>
+      <div class="title">
+        <h2>My Goals</h2>
+      </div>
+      <div class="box">
+        <div class="goals">
+          <h5>Graduate</h5>
+        </div>
+        <div class="goals">
+          <h5>Build Good Career</h5>
+        </div>
+        <div class="goals">
+          <h5>Be Successful</h5>
+        </div>
+        <div class="goals">
+          <h5>Join a Good Company</h5>
+        </div>
       </div>
     </div>
-    <div id="5_years">
-      <div class="5-years">
-        <h1>5 Years From Now</h1>
+    <div id="five_years" class="vision">
+      <h2>5 Years From Now</h2>
+      <div class="five-years-box">
       <p>
         5 Years from now, knowing what I want to be is very hard to think
         of because I am still very indecisive on what I want to be. But by
@@ -99,7 +93,6 @@
       </p>
       </div>
     </div>
-  </main>
   <script src="./script.js"></script>
 </body>
 </html>
